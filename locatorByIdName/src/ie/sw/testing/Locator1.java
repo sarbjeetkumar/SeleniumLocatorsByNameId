@@ -15,8 +15,8 @@ public class Locator1 {
 		WebDriver driver =  new FirefoxDriver();
 		
 		driver.get("http://facebook.com");
-		driver.findElement(By.id("email")).sendKeys("sarabjeet.com");
-		driver.findElement(By.name("pass")).sendKeys("sarabjeet@");
+		driver.findElement(By.id("email")).sendKeys("sarabjeetjatt.com");
+		driver.findElement(By.name("pass")).sendKeys("sarabjeetjatt@");
 		driver.findElement(By.xpath(".//*[@id='u_0_2']")).click();
 	}
 
