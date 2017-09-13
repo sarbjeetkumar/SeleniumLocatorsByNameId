@@ -17,7 +17,21 @@ public class Locator1 {
 		driver.get("http://facebook.com");
 		driver.findElement(By.id("email")).sendKeys("sarabjeetjatt.com");
 		driver.findElement(By.name("pass")).sendKeys("sarabjeetjatt@");
+		
+		//comment it coz i need to click on forgot your password link
 		driver.findElement(By.xpath(".//*[@id='u_0_2']")).click();
+		
+		//a tag for link 
+		
+		//try inspect if its a link coz it could be a botton
+		
+		driver.findElement(By.linkText("Forgot your password ?")).click();
+		
+		//if the text is changing everyday you can provide the partial text as well 
+		//driver.findElement(By.partialLinkText("Forgot Your")).click();
+		
+		
+		
 	}
 
 }
